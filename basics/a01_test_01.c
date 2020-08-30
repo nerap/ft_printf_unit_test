@@ -9,10 +9,10 @@ int		basics_test_01(void)
 
 	ft_write_test_name("\"\"");
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r1 = ft_printf("");
+	data.r1 = ft_printf(" ");
 	data.s1 = ft_get_stdout(pfd, &save_stdout);
 	ft_connect_stdout(pfd, &save_stdout);
-	data.r2 = printf("");
+	data.r2 = printf(" ");
 	data.s2 = ft_get_stdout(pfd, &save_stdout);
 	ret = 0;
 	if (data.r1 != data.r2)
